@@ -1,3 +1,6 @@
+/* ============================= */
+/* CSS Variables for consistent theming */
+/* ============================= */
 :root {
   --primary-color: #3a0ca3;
   --primary-light: #4361ee;
@@ -9,12 +12,18 @@
   --text-secondary: #636e72;
 }
 
+/* ============================= */
+/* Global reset and box-sizing */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ============================= */
+/* Body styling: font, background, centering content */
+/* ============================= */
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
@@ -26,6 +35,9 @@ body {
   padding: 2rem;
 }
 
+/* ============================= */
+/* Main container styling */
+/* ============================= */
 .container {
   width: 90%;
   max-width: 800px;
@@ -35,6 +47,9 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* ============================= */
+/* Header section styles */
+/* ============================= */
 .header {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -60,6 +75,9 @@ h1 {
   font-weight: 500;
 }
 
+/* ============================= */
+/* Input section for adding todos */
+/* ============================= */
 .input-section {
   display: flex;
   gap: 1rem;
@@ -81,7 +99,7 @@ h1 {
 
 input {
   width: 100%;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 1rem 1rem 3rem; /* padding-left for icon space */
   border: 2px solid #e2e8f0;
   border-radius: 12px;
   font-size: 1rem;
@@ -95,6 +113,9 @@ input:focus {
   box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
 }
 
+/* ============================= */
+/* Add Task button styles */
+/* ============================= */
 .add-btn {
   display: flex;
   align-items: center;
@@ -112,9 +133,12 @@ input:focus {
 
 .add-btn:hover {
   background-color: var(--primary-dark);
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* subtle lift effect on hover */
 }
 
+/* ============================= */
+/* Filter buttons section */
+/* ============================= */
 .filters {
   display: flex;
   gap: 1rem;
@@ -144,6 +168,9 @@ input:focus {
   background-color: #e9ecef;
 }
 
+/* ============================= */
+/* Todo list styles */
+/* ============================= */
 ul {
   list-style: none;
   display: flex;
@@ -162,7 +189,7 @@ li {
 }
 
 li:hover {
-  transform: translateX(5px);
+  transform: translateX(5px); /* subtle shift on hover */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -195,11 +222,11 @@ li:hover {
 }
 
 .complete-btn {
-  background-color: #10b981;
+  background-color: #10b981; /* green for complete */
 }
 
 .delete-btn {
-  background-color: #ef4444;
+  background-color: #ef4444; /* red for delete */
 }
 
 .action-btn:hover {
@@ -207,6 +234,7 @@ li:hover {
   filter: brightness(110%);
 }
 
+/* Styles for completed todos */
 li.completed {
   background-color: #f1f5f9;
   opacity: 0.8;
@@ -217,6 +245,9 @@ li.completed .todo-text {
   color: #94a3b8;
 }
 
+/* ============================= */
+/* Responsive design for smaller screens */
+/* ============================= */
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem;
