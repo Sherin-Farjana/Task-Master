@@ -4,6 +4,12 @@ A modern, interactive **to-do list web app** built using **HTML5**, **CSS3**, an
 
 ---
 
+## Live Demo
+
+**https://sherin-task-master-pro.netlify.app/**
+
+---
+
 ## Project Overview
 
 **TaskMaster Pro** is a **single-page task management application** that emphasizes simplicity, usability, and productivity.
@@ -51,26 +57,6 @@ TaskMaster-Pro/
 ├── script.js       # JavaScript functionality
 └── README.md       # Project documentation
 ```
-
----
-
-## Getting Started
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/Sherin-Farjana/Task-Master.git
-```
-
-### 2️⃣ Open the project folder
-
-```bash
-cd Task-Master
-```
-
-### 3️⃣ Run the project
-
-Open `index.html` in your browser, or use **Live Server** in VS Code for real-time updates.
 
 ---
 
